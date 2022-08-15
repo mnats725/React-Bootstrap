@@ -1,47 +1,23 @@
 import React from "react";
-import {
-  Button,
-  Container,
-  Form,
-  FormControl,
-  Nav,
-  Navbar,
-} from "react-bootstrap";
+import RoutesForHeader from "./Routes/Routes";
+import NavbarBrand from "./Navbar-brand/NavbarBrand";
+import NavbarCollapse from "./Navbar-collapse/NavbarCollapse";
+import SearchForm from "./Search-form/SearchForm";
 
-import "./style.css";
-import logo from "./logo192.png";
+import { Container, Navbar } from "react-bootstrap";
 
 const Header = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+      <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/">
-            <img
-              src={logo}
-              height="30"
-              width="30"
-              className="d-inline-block align-top"
-              alt="Logo"
-            ></img>
-          </Navbar.Brand>
+          <NavbarBrand />
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About us</Nav.Link>
-              <Nav.Link href="/contact">Contacts</Nav.Link>
-              <Nav.Link href="/blog">Blog</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-          <Form className="d-inline-flex p-2">
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button className="margin-left" inline variant="outline-info">
-              Search
-            </Button>
-          </Form>
+          <NavbarCollapse />
+          <SearchForm />
         </Container>
       </Navbar>
+      <RoutesForHeader />
     </div>
   );
 };
