@@ -1,6 +1,6 @@
 import React from "react";
 import RoutesForHeader from "./Routes/Routes";
-import NavbarBrand from "./Navbar-brand/NavbarBrand";
+import NavbarBrand from "./Nav-items/Navbar-brand/NavbarBrand";
 import NavbarCollapse from "./Navbar-collapse/NavbarCollapse";
 import SearchForm from "./Search-form/SearchForm";
 
