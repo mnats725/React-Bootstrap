@@ -1,8 +1,8 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
-import logo from "../../../../img/logo.png";
+import logo from "../../../../assets/img/logo.png";
 
-const NavbarBrand = () => (
+const HeaderLogo = () => (
   <div>
     <Navbar.Brand href="/">
       <img
@@ -16,4 +16,4 @@ const NavbarBrand = () => (
   </div>
 );
 
-export default NavbarBrand;
+export default HeaderLogo;

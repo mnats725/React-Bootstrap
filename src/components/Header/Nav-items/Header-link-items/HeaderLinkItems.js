@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 
-const NavbarCollapse = () => (
+const HeaderLinkItems = () => (
   <div>
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="mr-auto">
@@ -14,4 +14,4 @@ const NavbarCollapse = () => (
   </div>
 );
 
-export default NavbarCollapse;
+export default HeaderLinkItems;

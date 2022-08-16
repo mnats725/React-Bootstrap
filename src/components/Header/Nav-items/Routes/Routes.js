@@ -2,10 +2,10 @@ import React from "react";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Home from "../../../pages/Home/Home";
-import About from "../../../pages/About/About";
-import Contacts from "../../../pages/Contacts/Contacts";
-import Blog from "../../../pages/Blog/Blog";
+import { Home } from "../../../pages/Home/Home";
+import { About } from "../../../pages/About/About";
+import { Contacts } from "../../../pages/Contacts/Contacts";
+import { Blog } from "../../../pages/Blog/Blog";
 
 const RoutesForHeader = () => (
   <div>

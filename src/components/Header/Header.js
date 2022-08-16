@@ -1,8 +1,8 @@
 import React from "react";
-import RoutesForHeader from "./Routes/Routes";
-import NavbarBrand from "./Nav-items/Navbar-brand/NavbarBrand";
-import NavbarCollapse from "./Navbar-collapse/NavbarCollapse";
-import SearchForm from "./Search-form/SearchForm";
+import RoutesForHeader from "./Nav-items/Routes/Routes";
+import HeaderLogo from "./Nav-items/Header-logo/HeaderLogo";
+import HeaderLinkItems from "./Nav-items/Header-link-items/HeaderLinkItems";
+import SearchForm from "./Nav-items/Search-form/SearchForm";
 
 import { Container, Navbar } from "react-bootstrap";
 
@@ -11,13 +11,13 @@ const Header = () => {
     <div>
       <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
         <Container>
-          <NavbarBrand />
+          <HeaderLogo />
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <NavbarCollapse />
+          <HeaderLinkItems />
           <SearchForm />
         </Container>
       </Navbar>
-      <RoutesForHeader />
+      <RoutesForHeader /> 
     </div>
   );
 };
