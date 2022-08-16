@@ -6,7 +6,7 @@ import { Navbar } from "./navbar";
 import { SearchForm } from "./search-form";
 
 export const Header = () => (
-  <BootstrapNavbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
+  <BootstrapNavbar collapseOnSelect expand="md" bg="dark" variant="dark">
     <Container>
       <Logo />
       <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" />
